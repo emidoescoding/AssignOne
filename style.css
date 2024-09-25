@@ -3,7 +3,7 @@
     color: #ffffff;
     text-align: center;
     font-family: "Comic Neue";
-} 
+}
 
 body {
     margin: 0;
@@ -21,18 +21,15 @@ body {
     margin: 0;
 }
 
-.nav-list li {
-    margin: 0 20px;
-}
-
 .nav-list a {
     text-decoration: none;
     padding: 14px 20px;
     display: block;
+    border-radius: 10px;
 }
 
 .nav-list a:hover {
-    background-color: #CD6D6D;
+    background-color: #3f3f3fb4;
 }
 
 .nav-list .active {
@@ -63,4 +60,32 @@ h1 {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 200px;
+    padding: 20px;
+    height: auto;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item1>img {
+    width: 400px;
+    border-radius: 50%;
+    float: right;
+}
+
+.item2> p {
+    text-align: left;
+}
+
+.contact-icon {
+    width: 64px;
 }
