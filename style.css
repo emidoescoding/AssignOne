@@ -163,4 +163,8 @@ h1 {
         width: 60%;
     }
 
+    .proj-item>p {
+        margin: 5px;
+    }
+
 }
