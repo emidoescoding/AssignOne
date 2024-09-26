@@ -1,5 +1,4 @@
 * {
-    background-color: #1E1E1E;
     color: #ffffff;
     text-align: center;
     font-family: "Comic Neue";
@@ -7,6 +6,11 @@
 
 body {
     margin: 0;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.top-info {
+    margin-bottom: 3empx;
 }
 
 .navbar {
@@ -25,7 +29,11 @@ body {
     text-decoration: none;
     padding: 14px 20px;
     display: block;
-    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.nav-list li {
+    padding: 0px 10px 0px 10px;
 }
 
 .nav-list a:hover {
@@ -42,12 +50,11 @@ body {
 }
 
 h1 {
-    padding: 30px;
-    font-size: 46px;
+    font-size: 2.875em;
 }
 
 .me {
-    width: 400px;
+    max-width: 450px;
     border-radius: 30px;
 }
 
@@ -57,7 +64,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: 800px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -65,7 +72,7 @@ h1 {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 200px;
+    gap: 12.5em;
     padding: 20px;
     height: auto;
 }
@@ -73,19 +80,87 @@ h1 {
 .grid-container>div {
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 .item1>img {
     width: 400px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #CD6D6D;
     border-radius: 50%;
     float: right;
 }
 
-.item2> p {
+.item2>p {
     text-align: left;
 }
 
 .contact-icon {
     width: 64px;
+}
+
+.proj-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 100px;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.proj-container>div {
+    background-color: #434343;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #CD6D6D;
+    border-radius: 20px;
+    height: auto;
+}
+
+.proj-item>p {
+    margin: 15px;
+}
+
+.proj-item>a>img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .proj-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+        gap: 5px;
+    }
+    
+    .item2>p {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .item1>img {
+        width: 60%;
+        float: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .top-info {
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+    .me {
+        width: 60%;
+    }
+
 }
